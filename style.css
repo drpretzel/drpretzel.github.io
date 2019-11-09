@@ -1,7 +1,28 @@
+body {
+    background-image: url('img/bg.png');
+    background-position:  top left;
+    animation: bgfall 200s linear infinite;
+}
+
 .banner {
     display: flex;
     height: 80vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 60%;
+}
+
+@keyframes bgfall {
+    from {
+        background-position: 0px 0px;
+      }
+    to { 
+        background-position: -1024px 12288px;
+    }
 }
